@@ -1,6 +1,12 @@
 body{
     background-color: #110f0fea;
   }
+  header{
+    height: 70px;
+  }
+  footer{
+    height: 60px;
+  }
   header, .alert{
     z-index: 100;
   }
@@ -37,6 +43,9 @@ body{
     margin-bottom: 20px;
   }
   .hide, .remove{
+    display: none;
+  }
+  #alerta{
     display: none;
   }
   

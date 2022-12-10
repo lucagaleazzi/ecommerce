@@ -31,7 +31,7 @@ function addItemCarrito(newItem){
 
   setTimeout( function(){
     alert.classList.add('hide')
-  }, 2000)
+  }, 1000)
     alert.classList.remove('hide')
 
   const InputElemnto = tbody.getElementsByClassName('input__elemento')
@@ -106,7 +106,7 @@ function removeItemCarrito(e){
 
   setTimeout( function(){
     alert.classList.add('remove')
-  }, 2000)
+  }, 1000)
     alert.classList.remove('remove')
 
   tr.remove()
@@ -129,7 +129,6 @@ function sumaCantidad(e){
 function addLocalStorage(){
   localStorage.setItem('carrito', JSON.stringify(carrito))
 }
-
 window.onload = function(){
   const storage = JSON.parse(localStorage.getItem('carrito'));
   if(storage){
